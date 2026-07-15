@@ -3,20 +3,40 @@
 
 @theme {
 
-    /* ------------------------------------ Dark Theme */
-    --color-background-dark: #070f1c;
-    --color-text-dark: #d7fff1;
-    --color-primary-dark: #072ac8;
-    --color-secondary-dark: #53564e;
-    --color-accent-dark: #60968A;
+    --color-background: var(--color-bg);
+    --color-text: var(--text-color);
+    --color-primary: var(--primary);
+    --color-secondary: var(--secondary);
+    --color-accent: var(--accent);
+
+    /* ------------------------------------ Shared */
+    --color-graphene: #2B2C28;
+}
+
 
     /* ------------------------------------ Light Theme */
-    --color-background-light: #F7F9FC;
-    --color-text-light: #1E293B;
-    --color-primary-light: #0A4DDB;
-    --color-secondary-light: #CBD5E1;
-    --color-accent-light: #4E8B80;
+:root {
+    --color-bg: #F7F9FC;
+    --text-color: #1E293B;
+    --primary: #0A4DDB;
+    --secondary: #CBD5E1;
+    --accent: #4E8B80;
+}
 
-        /* ------------------------------------ Shared */
-    --color-graphene: #2B2C28;
+    /* ------------------------------------ Dark Theme */
+.dark {
+    --color-bg: #070f1c;
+    --text-color: #d7fff1;
+    --primary: #072ac8;
+    --secondary: #53564e;
+    --accent: #60968A;
+}
+
+    /* ------------------------------------ Pure Contrast */
+.pure-night {
+    --color-bg: #000000;
+    --text-color: #ffffff;
+    --primary: #072ac8;
+    --secondary: #53564e;
+    --accent: #60968A;
 }

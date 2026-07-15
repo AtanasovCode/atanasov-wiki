@@ -14,5 +14,5 @@ export const useWikiStore = create<WikiState>()((set) => ({
   bears: 2,
   food: 'honey',
   feed: (food) => set(() => ({ food })),
-  theme: "dark",
+  theme: "pure-night",
 }))
