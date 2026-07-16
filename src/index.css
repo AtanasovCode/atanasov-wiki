@@ -33,7 +33,7 @@
 }
 
     /* ------------------------------------ Pure Contrast */
-.pure-night {
+.blackout {
     --color-bg: #000000;
     --text-color: #ffffff;
     --primary: #072ac8;
