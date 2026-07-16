@@ -18,7 +18,7 @@ interface OptionSelectProps {
 const OptionSelect = ({ optionType, availableOptions, currentOption, setOption }: OptionSelectProps) => {
     return (
         <div className="flex items-start justify-start flex-col gap-2">
-            <div className="font-semibold text-md">
+            <div className="font-medium text-md">
                 {optionType}:
             </div>
             <div className="flex flex-col items-start justify-start gap-1 pl-6">

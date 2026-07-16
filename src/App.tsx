@@ -28,8 +28,12 @@ const App = () => {
         font === "mono" && "font-mono"
       )}
     >
-      <div className="font-bold">TEST</div>
-      <CustomizationPanel />
+      <div className="flex items-start justify-start gap-4">
+        <CustomizationPanel />
+        <div className="w-3xl mt-32">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem vero voluptatum dolores soluta accusantium, explicabo error nulla illum. Sunt rerum porro ullam voluptas aperiam minus eos? Ipsam placeat quas dolor. Maxime aliquid repudiandae ad possimus, ipsum quibusdam quae dolores a. Quae, beatae? Aspernatur temporibus quas nesciunt quisquam nulla qui ea eaque autem in, culpa fuga fugit optio! Dolor dignissimos cupiditate eius in enim molestias, tempora nostrum voluptatibus laborum animi perferendis esse ab ipsam. Corrupti earum odio ullam adipisci error maxime officia molestiae voluptas expedita saepe?
+        </div>
+      </div>
     </div>
   );
 }

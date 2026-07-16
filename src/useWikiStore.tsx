@@ -8,6 +8,9 @@ interface WikiState {
 
   font: string
   setFont: (font: string) => void
+
+  fontSize: string
+  setFontSize: (size: string) => void
 }
 
 
@@ -18,4 +21,6 @@ export const useWikiStore = create<WikiState>()((set) => ({
   setTheme: (theme) => set(() => ({ theme })),
   font: "sans",
   setFont: (font) => set(() => ({ font })),
+  fontSize: "medium",
+  setFontSize: (fontSize) => set(() => ({ fontSize }))
 }))

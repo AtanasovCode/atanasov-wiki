@@ -13,19 +13,26 @@ const CustomizationPanel = () => {
     const {
         theme, setTheme,
         font, setFont,
+        fontSize, setFontSize,
     } = useWikiStore();
 
     const themes: OptionTypes[] = [
-        {index: 1, name: "System", value: "system"},
+        { index: 1, name: "System", value: "system" },
         { index: 1, name: "Light", value: "light" },
         { index: 2, name: "Dark", value: "dark" },
-        { index: 3, name: "Night", value: "night"}
+        { index: 3, name: "Night", value: "night" }
     ]
 
     const fonts: OptionTypes[] = [
         { index: 1, name: "Sans", value: "sans" },
         { index: 1, name: "Serif", value: "serif" },
         { index: 1, name: "Mono", value: "mmono" },
+    ]
+
+    const fontSizes: OptionTypes[] = [
+        { index: 1, name: "Small", value: "small" },
+        { index: 1, name: "Medium", value: "medium" },
+        { index: 1, name: "Large", value: "large" },
     ]
 
     return (
@@ -46,6 +53,12 @@ const CustomizationPanel = () => {
                 availableOptions={fonts}
                 currentOption={font}
                 setOption={setFont}
+            />
+            <OptionSelect
+                optionType="Font Size"
+                availableOptions={fontSizes}
+                currentOption={fontSize}
+                setOption={setFontSize}
             />
         </div>
     );
