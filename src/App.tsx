@@ -7,7 +7,7 @@ import CustomizationPanel from "./components/customization/CustomizationPanel";
 
 const App = () => {
 
-  const { theme } = useWikiStore()
+  const { theme, font } = useWikiStore()
 
 
   useEffect(() => {
@@ -22,7 +22,10 @@ const App = () => {
     <div
       className={clsx(
         "min-h-screen w-full bg-background text-text",
-        "transition-colors duration-300"
+        "transition-colors duration-300",
+        font === "sans" && "font-sans",
+        font === "serif" && "font-serif",
+        font === "mono" && "font-mono"
       )}
     >
       <div className="font-bold">TEST</div>

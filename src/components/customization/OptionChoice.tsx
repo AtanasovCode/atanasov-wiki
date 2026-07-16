@@ -21,20 +21,26 @@ const OptionChoice = ({
         <div
             className={clsx(
                 "flex items-center justify-center cursor-pointer border",
-                "p-2 rounded-xl font-sm transition-all duration-300",
-                currentOption == value ? "border-accent w-24 font-semibold" : "border-secondary w-20",
+                "p-2 rounded-lg text-sm transition-all duration-300 gap-2",
+                currentOption == value ? "border-2 border-accent w-26 font-semibold" : "border-secondary w-20",
             )}
             onClick={() => setOption(value)}
         >
             <div
                 className={clsx(
-                    "aspect-square rounded-full bg-accent transition-transform duration-200",
-                    currentOption === value ? "w-3 scale-100 mx-2" : "scale-0 mx-0 w-0"
+                    "aspect-square text-black text-xs flex items-center justify-center rounded-full bg-accent transition-transform duration-200",
+                    currentOption === value ? "w-3 scale-100" : "scale-0 w-0"
                 )}
             >
-
+                {/* This is the dot that shows currently active option */}
             </div>
-            <div>
+            <div
+                className={clsx(
+                    value === "sans" && "font-sans",
+                    value === "serif" && "font-serif",
+                    value === "mono" && "font-mono"
+                )}
+            >
                 {name}
             </div>
         </div>

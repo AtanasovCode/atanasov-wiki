@@ -16,9 +16,10 @@ const CustomizationPanel = () => {
     } = useWikiStore();
 
     const themes: OptionTypes[] = [
+        {index: 1, name: "System", value: "system"},
         { index: 1, name: "Light", value: "light" },
         { index: 2, name: "Dark", value: "dark" },
-        { index: 3, name: "Night", value: "night" }
+        { index: 3, name: "Night", value: "night"}
     ]
 
     const fonts: OptionTypes[] = [

@@ -21,7 +21,7 @@ const OptionSelect = ({ optionType, availableOptions, currentOption, setOption }
             <div className="font-semibold text-md">
                 {optionType}:
             </div>
-            <div className="flex flex-col items-start justify-start gap-3 pl-6">
+            <div className="flex flex-col items-start justify-start gap-1 pl-6">
                 {
                     availableOptions.map((option) => {
                         return (

@@ -24,6 +24,10 @@
             opacity: 100;
         }
     }
+
+    --font-serif: "Old Standard TT", serif;
+    --font-sans: "Quicksand", sans-serif;
+    --font-mono: "Source Code Pro", monospace;
 }
 
 
