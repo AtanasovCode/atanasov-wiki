@@ -31,7 +31,7 @@ const ThemeToggle = () => {
                 {
                     themes.map((t) => {
                         return (
-                          <ThemeSelect themeName={t.name} themeValue={t.value} />
+                            <ThemeSelect themeName={t.name} themeValue={t.value} />
                         );
                     })
                 }

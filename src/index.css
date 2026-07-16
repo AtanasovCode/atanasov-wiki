@@ -11,6 +11,19 @@
 
     /* ------------------------------------ Shared */
     --color-graphene: #2B2C28;
+
+    --animate-slide-down: slide-down 0.2s ease-in;
+
+    @keyframes slide-down {
+        from {
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 100;
+        }
+    }
 }
 
 

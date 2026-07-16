@@ -20,11 +20,11 @@ const ThemeSelect = ({ themeName, themeValue }: ThemeSelectProps) => {
         >
             <div className={clsx(
                 "w-4 aspect-square border rounded-full flex items-center justify-center",
-                theme == themeValue && "border-accent",
+                "animate-slide-down",
                 theme != themeValue && "border-text"
             )}>
                 {
-                    theme == themeValue && <div className="w-[60%] aspect-square rounded-full bg-accent"></div>
+                    theme == themeValue && <div className="w-[60%] aspect-square rounded-full bg-accent animate-slide-down"></div>
                 }
             </div>
             <div>
