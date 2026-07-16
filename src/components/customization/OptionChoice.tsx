@@ -22,7 +22,7 @@ const OptionChoice = ({
             className={clsx(
                 "flex items-center justify-center cursor-pointer border",
                 "p-2 rounded-lg text-sm transition-all duration-300 gap-2",
-                currentOption == value ? "border-text w-20 font-semibold" : "border-secondary w-16",
+                currentOption == value ? "border-text w-22 font-semibold" : "border-secondary w-18",
             )}
             onClick={() => setOption(value)}
         >
