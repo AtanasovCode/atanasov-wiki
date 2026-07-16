@@ -2,7 +2,7 @@ import { useWikiStore } from "./useWikiStore";
 import clsx from "clsx";
 import { useEffect } from "react";
 
-import ThemeToggle from "./components/theme/ThemeToggle";
+import CustomizationPanel from "./components/customization/CustomizationPanel";
 
 
 const App = () => {
@@ -26,7 +26,7 @@ const App = () => {
       )}
     >
       <div className="font-bold">TEST</div>
-      <ThemeToggle />
+      <CustomizationPanel />
     </div>
   );
 }
