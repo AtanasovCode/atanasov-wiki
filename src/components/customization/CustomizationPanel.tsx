@@ -31,8 +31,8 @@ const CustomizationPanel = () => {
 
     const fontSizes: OptionTypes[] = [
         { index: 1, name: "Small", value: "small" },
-        { index: 1, name: "Medium", value: "medium" },
-        { index: 1, name: "Large", value: "large" },
+        { index: 2, name: "Normal", value: "normal" },
+        { index: 3, name: "Large", value: "large" },
     ]
 
     return (

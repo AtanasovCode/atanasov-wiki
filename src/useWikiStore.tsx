@@ -21,6 +21,6 @@ export const useWikiStore = create<WikiState>()((set) => ({
   setTheme: (theme) => set(() => ({ theme })),
   font: "sans",
   setFont: (font) => set(() => ({ font })),
-  fontSize: "medium",
+  fontSize: "normal",
   setFontSize: (fontSize) => set(() => ({ fontSize }))
 }))

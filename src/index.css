@@ -9,6 +9,8 @@
     --color-secondary: var(--secondary);
     --color-accent: var(--accent);
 
+    --text-body: var(--body-font-size);
+
     /* ------------------------------------ Shared */
     --color-graphene: #2B2C28;
 
@@ -19,41 +21,55 @@
             transform: translateX(-200%);
             opacity: 0;
         }
+
         to {
             transform: translateX(0);
             opacity: 100;
         }
     }
 
-    --font-serif: "Old Standard TT", serif;
-    --font-sans: "Quicksand", sans-serif;
-    --font-mono: "Source Code Pro", monospace;
+    --font-serif: "Old Standard TT",
+    serif;
+    --font-sans: "Quicksand",
+    sans-serif;
+    --font-mono: "Source Code Pro",
+    monospace;
 }
 
 
-    /* ------------------------------------ Light Theme */
+/* ------------------------------------ Light Theme */
 :root {
     --color-bg: #F7F9FC;
     --text-color: #1E293B;
     --primary: #0A4DDB;
     --secondary: #CBD5E1;
     --accent: #75b3a6;
+
+    --body-font-size: 1rem;
 }
 
-    /* ------------------------------------ Dark Theme */
+/* ------------------------------------ Dark Theme */
 .dark {
     --color-bg: #070f1c;
     --text-color: #d7fff1;
-    --primary: #53564e; 
+    --primary: #53564e;
     --secondary: #90948a;
     --accent: #75b3a6;
 }
 
-    /* ------------------------------------ Pure Contrast */
+/* ------------------------------------ Pure Contrast */
 .night {
     --color-bg: #000000;
     --text-color: #ffffff;
     --primary: #072ac8;
     --secondary: #90948a;
     --accent: #75b3a6;
+}
+
+.small {
+    --body-font-size: 0.85rem;
+}
+
+.large {
+    --body-font-size: 1.25rem;
 }
