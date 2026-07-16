@@ -2,7 +2,7 @@ import { useWikiStore } from "./useWikiStore";
 import clsx from "clsx";
 import { useEffect } from "react";
 
-import ThemeToggle from "./components/ThemeToggle";
+import ThemeToggle from "./components/theme/ThemeToggle";
 
 
 const App = () => {
@@ -11,7 +11,7 @@ const App = () => {
 
 
   useEffect(() => {
-    document.documentElement.classList.remove("dark", "blackout");
+    document.documentElement.classList.remove("dark", "night");
 
     if (theme !== "light") {
       document.documentElement.classList.add(theme);

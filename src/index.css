@@ -12,15 +12,15 @@
     /* ------------------------------------ Shared */
     --color-graphene: #2B2C28;
 
-    --animate-slide-down: slide-down 0.2s ease-in;
+    --animate-slide-in: slide-in 0.2s ease-in-out;
 
-    @keyframes slide-down {
+    @keyframes slide-in {
         from {
-            transform: translateY(-100%);
+            transform: translateX(-200%);
             opacity: 0;
         }
         to {
-            transform: translateY(0);
+            transform: translateX(0);
             opacity: 100;
         }
     }
@@ -33,23 +33,23 @@
     --text-color: #1E293B;
     --primary: #0A4DDB;
     --secondary: #CBD5E1;
-    --accent: #4E8B80;
+    --accent: #75b3a6;
 }
 
     /* ------------------------------------ Dark Theme */
 .dark {
     --color-bg: #070f1c;
     --text-color: #d7fff1;
-    --primary: #072ac8;
-    --secondary: #53564e;
-    --accent: #60968A;
+    --primary: #53564e; 
+    --secondary: #90948a;
+    --accent: #75b3a6;
 }
 
     /* ------------------------------------ Pure Contrast */
-.blackout {
+.night {
     --color-bg: #000000;
     --text-color: #ffffff;
     --primary: #072ac8;
-    --secondary: #53564e;
-    --accent: #60968A;
+    --secondary: #90948a;
+    --accent: #75b3a6;
 }

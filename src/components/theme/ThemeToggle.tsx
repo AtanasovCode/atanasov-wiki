@@ -2,7 +2,7 @@ import ThemeSelect from "./ThemeSelect"
 
 interface ThemeOptions {
     name: string
-    value: "light" | "dark" | "blackout"
+    value: "light" | "dark" | "night"
 }
 
 
@@ -19,19 +19,21 @@ const ThemeToggle = () => {
             value: "dark"
         },
         {
-            name: "Blackout",
-            value: "blackout"
+            name: "Night",
+            value: "night"
         }
     ]
 
     return (
         <div className="flex items-start justify-start flex-col gap-2">
-            <div className="font-semibold text-lg">Theme:</div>
-            <div className="flex flex-col items-start justify-start gap-2">
+            <div className="font-semibold text-lg">
+                Theme:
+            </div>
+            <div className="flex flex-col items-start justify-start gap-3 pl-6">
                 {
                     themes.map((t) => {
                         return (
-                            <ThemeSelect themeName={t.name} themeValue={t.value} />
+                            <ThemeSelect key={t.value} themeName={t.name} themeValue={t.value} />
                         );
                     })
                 }
