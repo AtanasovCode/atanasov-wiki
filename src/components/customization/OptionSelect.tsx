@@ -17,11 +17,11 @@ interface OptionSelectProps {
 
 const OptionSelect = ({ optionType, availableOptions, currentOption, setOption }: OptionSelectProps) => {
     return (
-        <div className="flex items-start justify-start flex-col gap-2">
+        <div className="flex items-start justify-start flex-col gap-2 w-full">
             <div className="font-medium text-md">
                 {optionType}:
             </div>
-            <div className="flex flex-col items-start justify-start gap-1 pl-6">
+            <div className="flex flex-col items-start justify-start gap-2 pl-2 w-full">
                 {
                     availableOptions.map((option) => {
                         return (

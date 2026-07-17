@@ -20,15 +20,18 @@ const OptionChoice = ({
     return (
         <div
             className={clsx(
-                "flex items-center justify-center cursor-pointer border",
-                "p-2 rounded-lg text-sm transition-all duration-300 gap-2",
-                currentOption == value ? "border-text w-22 font-semibold" : "border-secondary w-18",
+                "relative flex items-center justify-start cursor-pointer w-full p-1",
+                "text-md gap-2 transition-all duration-300",
+                "before:transition-all before:duration-400 before:absolute before:content-['']",
+                "before:z-1 before:top-0 before:left-0 before:h-full before:w-0",
+                currentOption == value && "font-medium bg-text/20 hover:before:w-0",
+                currentOption != value && "hover:before:bg-text/25 hover:before:w-full",
             )}
             onClick={() => setOption(value)}
         >
             <div
                 className={clsx(
-                    "aspect-square text-black text-xs flex items-center justify-center rounded-full bg-text transition-transform duration-200",
+                    "rounded-full aspect-square bg-text transition-transform duration-300",
                     currentOption === value ? "w-2 scale-100" : "scale-0 w-0"
                 )}
             >

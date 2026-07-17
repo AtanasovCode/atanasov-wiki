@@ -37,7 +37,7 @@ const CustomizationPanel = () => {
 
     return (
         <div
-            className="flex flex-col items-start justify-start gap-3 w-64 p-6 border-l border-secondary"
+            className="flex flex-col items-start justify-start gap-3 min-w-48 min-h-screen border-r p-6 pr-0 border-slate-700"
         >
             <div className="font-bold text-lg">
                 Customization
