@@ -9,7 +9,7 @@ interface OptionTypes {
 
 interface OptionSelectProps {
     optionType: string // example: Theme / Font / etc.
-    availableOptions: OptionTypes[]
+    availableOptions: OptionTypes[]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
     currentOption: string
     setOption: (option: string) => void
 }
@@ -17,8 +17,8 @@ interface OptionSelectProps {
 
 const OptionSelect = ({ optionType, availableOptions, currentOption, setOption }: OptionSelectProps) => {
     return (
-        <div className="flex items-start justify-start flex-col gap-2 w-full">
-            <div className="font-medium text-md">
+        <div className="flex items-start justify-start flex-col gap-1 w-full">
+            <div className="font-medium text-lg">
                 {optionType}:
             </div>
             <div className="flex flex-col items-start justify-start gap-2 pl-2 w-full">

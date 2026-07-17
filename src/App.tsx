@@ -3,6 +3,7 @@ import clsx from "clsx";
 import { useEffect } from "react";
 
 import CustomizationPanel from "./components/customization/CustomizationPanel";
+import MainBody from "./components/main/MainBody";
 
 
 const App = () => {
@@ -38,9 +39,7 @@ const App = () => {
     >
       <div className="flex items-start justify-start gap-32">
         <CustomizationPanel />
-        <div className="w-3xl mt-32 text-body">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem vero voluptatum dolores soluta accusantium, explicabo error nulla illum. Sunt rerum porro ullam voluptas aperiam minus eos? Ipsam placeat quas dolor. Maxime aliquid repudiandae ad possimus, ipsum quibusdam quae dolores a. Quae, beatae? Aspernatur temporibus quas nesciunt quisquam nulla qui ea eaque autem in, culpa fuga fugit optio! Dolor dignissimos cupiditate eius in enim molestias, tempora nostrum voluptatibus laborum animi perferendis esse ab ipsam. Corrupti earum odio ullam adipisci error maxime officia molestiae voluptas expedita saepe?
-        </div>
+        <MainBody />
       </div>
     </div>
   );
