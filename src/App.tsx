@@ -4,6 +4,7 @@ import { useEffect } from "react";
 
 import CustomizationPanel from "./components/customization/CustomizationPanel";
 import MainBody from "./components/main/MainBody";
+import Header from "./components/header/Header";
 
 
 const App = () => {
@@ -32,12 +33,14 @@ const App = () => {
       className={clsx(
         "min-h-screen w-full bg-background text-text",
         "transition-colors duration-300",
+        "flex flex-col items-start justify-start",
         font === "sans" && "font-sans",
         font === "serif" && "font-serif",
         font === "mono" && "font-mono"
       )}
     >
-      <div className="flex items-start justify-start gap-32">
+      <Header />
+      <div className="flex flex-1 w-full items-stretch justify-start gap-x-16">
         <CustomizationPanel />
         <MainBody />
       </div>

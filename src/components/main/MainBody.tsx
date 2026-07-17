@@ -2,9 +2,9 @@ const MainBody = () => {
     return (
         <div
             className="
-                w-3xl my-12 text-body
+                w-3xl py-12 text-body
                 first-letter:float-left first-letter:text-[6rem] first-letter:font-black first-letter:m-6
-                first-letter:leading-none
+                first-letter:leading-none animate-slide-into-view
             "
         >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, deleniti optio. Nam necessitatibus sequi nisi dolore doloremque accusamus nulla, eaque repellat tempore ipsum unde error quod molestias at similique. Modi.

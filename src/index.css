@@ -15,16 +15,28 @@
     --color-graphene: #2B2C28;
 
     --animate-slide-in: slide-in 0.2s ease-in-out;
+    --animate-slide-into-view: slide-into-view .6s ease-in-out;
 
     @keyframes slide-in {
         from {
-            transform: translateX(-200%);
+            transform: translateX(-100%);
             opacity: 0;
         }
 
         to {
             transform: translateX(0);
             opacity: 100;
+        }
+    }
+
+    @keyframes slide-into-view {
+        from {
+            opacity: 0;
+            transform: translateY(-100%);
+        }
+        to {
+            opacity: 100;
+            transform: translateY(0);
         }
     }
 

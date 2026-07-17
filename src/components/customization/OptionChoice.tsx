@@ -32,7 +32,7 @@ const OptionChoice = ({
             <div
                 className={clsx(
                     "rounded-full aspect-square bg-text transition-transform duration-300",
-                    currentOption === value ? "w-2 scale-100" : "scale-0 w-0"
+                    currentOption === value ? "w-2 scale-100 animate-slide-in" : "scale-0 w-0"
                 )}
             >
                 {/* This is the dot that shows currently active option */}
