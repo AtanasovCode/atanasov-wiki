@@ -2,7 +2,7 @@ import clsx from "clsx"
 
 interface ParagraphProps {
     children: React.ReactNode
-    firstLetter: boolean
+    firstLetter?: boolean
 }
 
 
