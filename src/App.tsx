@@ -45,7 +45,7 @@ const App = () => {
       )}
     >
       <Header />
-      <div className="flex flex-1 w-full items-stretch justify-start gap-x-16">
+      <div className="flex flex-1 w-full items-stretch justify-start gap-32">
         <CustomizationPanel />
         <BrowserRouter>
           <Routes>

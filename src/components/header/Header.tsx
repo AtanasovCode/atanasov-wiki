@@ -2,7 +2,7 @@ const Header = () => {
     return (
         <header
             className="
-                w-full h-md flex items-center justify-between p-6
+                w-full h-20 flex items-center justify-between p-6
                 border-b border-secondary/50
             "
         >
