@@ -1,19 +1,22 @@
+import Paragraph from "../text-elements/Paragraph";
+
 const MainBody = () => {
     return (
         <div
             className="
-                w-3xl py-12 text-body
-                first-letter:float-left first-letter:text-[6rem] first-letter:font-black first-letter:m-6
-                first-letter:leading-none animate-slide-into-view
-            "
+                w-3xl py-12 text-body animate-slide-into-view"
         >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, deleniti optio. Nam necessitatibus sequi nisi dolore doloremque accusamus nulla, eaque repellat tempore ipsum unde error quod molestias at similique. Modi.
-            Tempora repudiandae consectetur obcaecati sunt voluptates delectus aliquam voluptatibus labore eum accusamus ex excepturi, temporibus ut molestiae odit nam eos illo facere perspiciatis blanditiis ducimus vitae animi harum aliquid. Assumenda?
-            Deleniti incidunt totam optio placeat soluta amet blanditiis itaque doloremque labore vel, similique, facere nostrum. Beatae exercitationem corrupti reprehenderit necessitatibus labore dolorem quaerat ducimus dolorum assumenda? Atque perferendis et quidem?
-            Animi error itaque molestiae, consequatur modi, nobis perspiciatis blanditiis aperiam odio a sint tempora fugit, perferendis nostrum! Odio tempore consectetur, laudantium tenetur fugit aperiam harum temporibus sint vitae odit distinctio!
-            Tempora voluptatum ducimus molestiae reiciendis iusto impedit corporis repellat! Fugiat molestiae repellendus reprehenderit! Enim quasi, obcaecati nemo nihil nulla aut molestias eveniet illum. Reiciendis laboriosam vitae dolorem dolorum consequuntur sit.
-            Maiores magni error reprehenderit, eum earum odit dignissimos debitis fuga minima harum repudiandae rem suscipit ab velit tenetur, accusantium vitae sint repellat! Ex quidem voluptatem, quod blanditiis reiciendis architecto rerum!
-            Quia ducimus maxime vero tempore facilis eligendi ad, accusantium libero labore accusamus impedit, minima quidem quae, sapiente necessitatibus repellendus magnam voluptate eum praesentium sint amet fugiat. Quos sit provident recusandae.m veritatis unde officia.
+            <Paragraph firstLetter={true}>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad deleniti architecto dolor nam porro voluptatibus sed fugit facilis laboriosam facere dolorum, at aliquam nisi quas, necessitatibus molestias ipsa possimus quae.
+                Praesentium, illum optio ipsa sit, porro sunt ut eum maiores quia beatae quod officia. Molestiae ratione nisi dignissimos temporibus ea, earum, ipsam assumenda aperiam harum commodi error impedit, id voluptates.
+                Laudantium quae deserunt ad. Dolores, provident maiores cupiditate, doloremque commodi ullam impedit reprehenderit error ea, eligendi rem? Nisi velit quaerat architecto ea, quae officia? Accusamus ex ut ipsa adipisci ipsam?
+                Animi nisi vitae recusandae commodi sint! Corporis libero, dolorem explicabo, temporibus aperiam a iure nisi ratione qui culpa, recusandae voluptas molestias earum sequi magnam dignissimos animi velit quam id impedit!
+            </Paragraph>
+
+            <Paragraph>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis esse sunt ipsa veniam ratione, odit cupiditate saepe qui laudantium repellendus ad explicabo provident deleniti dolores blanditiis officiis quibusdam autem quo.
+                Deserunt aut ipsam et dolorum perspiciatis aperiam, necessitatibus maxime deleniti porro consequuntur. Commodi doloribus tenetur exercitationem fugit consequatur deleniti nulla eveniet distinctio accusantium, saepe perspiciatis, veniam, rerum deserunt nisi suscipit.
+            </Paragraph>
         </div>
     );
 }
