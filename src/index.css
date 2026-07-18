@@ -39,12 +39,9 @@
         }
     }
 
-    --font-serif: "Old Standard TT",
-    serif;
-    --font-sans: "Quicksand",
-    sans-serif;
-    --font-mono: "Source Code Pro",
-    monospace;
+    --font-serif: "Antic Didone", serif;
+    --font-sans: "Quicksand", sans-serif;
+    --font-mono: "Source Code Pro", monospace;
 }
 
 

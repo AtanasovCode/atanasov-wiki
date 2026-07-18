@@ -26,7 +26,7 @@ const CustomizationPanel = () => {
     const fonts: OptionTypes[] = [
         { index: 1, name: "Sans", value: "sans" },
         { index: 1, name: "Serif", value: "serif" },
-        { index: 1, name: "Mono", value: "mmono" },
+        { index: 1, name: "Mono", value: "mono" },
     ]
 
     const fontSizes: OptionTypes[] = [
