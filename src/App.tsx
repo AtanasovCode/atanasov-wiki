@@ -1,10 +1,15 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useWikiStore } from "./useWikiStore";
 import clsx from "clsx";
 import { useEffect } from "react";
 
+
+// UI Elements
 import CustomizationPanel from "./components/customization/CustomizationPanel";
-import MainBody from "./components/main/MainBody";
 import Header from "./components/header/Header";
+
+// Routes
+import Home from "./pages/Home";
 
 
 const App = () => {
@@ -42,7 +47,11 @@ const App = () => {
       <Header />
       <div className="flex flex-1 w-full items-stretch justify-start gap-x-16">
         <CustomizationPanel />
-        <MainBody />
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
+        </BrowserRouter>
       </div>
     </div>
   );
