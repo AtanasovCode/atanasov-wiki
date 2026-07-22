@@ -37,12 +37,12 @@ const NavigationPanel = ({
 
     return (
         <div
-            className={`mr-8 sticky top-2 transition-all duration-500`}
+            className={`mr-8 mt-8 sticky top-8 transition-all duration-500`}
             style={{ height: `${panelHeight}px` }}
         >
             <RulerLines sections={sections} />
             <div
-                className="w-6 h-1 bg-text absolute right-0"
+                className="w-6 h-0.5 bg-text absolute right-0"
                 style={{ top: `${rulerScrollPosition}px` }}
             >
                 {/* Line that tracks current position of the page on the ruler  */}

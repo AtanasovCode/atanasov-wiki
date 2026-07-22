@@ -24,28 +24,29 @@ const RulerLines = ({
 
             if (sectionIndex < sections.length) {
                 lines.push(
-                    <div className="w-full flex items-center justify-between gap-2">
-                        <div>{sections[sectionIndex].title}</div>
-                        <div key={i} className="w-6 h-0.5 bg-secondary"></div>
+                    <div
+                        key={i}
+                        className="w-full h-0.5 flex items-center justify-between"
+                    >
+                        <div className="whitespace-nowrap">
+                            {sections[sectionIndex].title}
+                        </div>
+                        <div className="w-6 h-0.5 bg-secondary"></div>
                     </div>
                 )
             }
         }
-        if (i === sections.length * 10 - 1) {
+        else {
             lines.push(
-                <div className="w-full flex items-center justify-between gap-2">
-                    <div>Footer</div>
-                    <div key={i} className="w-6 h-0.5 bg-secondary"></div>
+                <div key={i} className="w-full h-0.5 flex justify-end">
+                    <div className="w-2 h-0.5 bg-secondary"></div>
                 </div>
             )
-        }
-        else {  
-            lines.push(<div key={i} className="w-2 h-0.5 bg-secondary"></div>)
         }
     }
 
     return (
-        <div className="h-full flex flex-col items-end justify-between pl-4">
+        <div className="h-full w-full flex flex-col items-end justify-between pl-4">
             {lines}
         </div>
     );
