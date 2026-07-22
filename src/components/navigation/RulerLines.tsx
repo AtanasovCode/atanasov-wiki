@@ -45,7 +45,7 @@ const RulerLines = ({
     }
 
     return (
-        <div className="h-full flex flex-col items-end justify-between pl-4 py-2">
+        <div className="h-full flex flex-col items-end justify-between pl-4">
             {lines}
         </div>
     );
