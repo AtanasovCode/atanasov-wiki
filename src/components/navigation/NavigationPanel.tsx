@@ -13,7 +13,7 @@ interface NavigationPanelProps {
 }
 
 
-const HEIGHT_RATIO: number = 5
+const HEIGHT_RATIO: number = 4
 
 
 const NavigationPanel = ({
@@ -23,35 +23,14 @@ const NavigationPanel = ({
     const { websiteHeight } = useWikiStore()
 
     const panelHeight = websiteHeight / HEIGHT_RATIO
-    let sectionCount: number = 0
-
-    sections.map(() => {
-        sectionCount += 1
-    })
 
     return (
         <div
-            className={`flex items-stretch mr-6 pr-2 sticky top-2 p-2 border border-white/50`}
+            className={`mr-8 sticky top-2 border border-white/50`}
             style={{ height: `${panelHeight}px` }}
         >
-            <div className="w-full h-full flex flex-col items-center justify-between">
-                {
-                    sections.map((section) => {
-                        return (
-                            <div className="gap-2 flex items-center justify-between">
-                                <div className="">
-                                    {section.title}
-                                </div>
-                                <div className="w-3 h-0.5 bg-white/50">
-
-                                </div>
-                            </div>
-                        );
-                    })
-                }
-            </div>
-            <RulerLines amount={sectionCount * 13} />
-        </div>
+            <RulerLines sections={sections} />
+        </div >
     );
 }
 
