@@ -26,7 +26,7 @@ const RulerLines = ({
                 lines.push(
                     <div className="w-full flex items-center justify-between gap-2">
                         <div>{sections[sectionIndex].title}</div>
-                        <div key={i} className="w-6 h-0.5 bg-white/50"></div>
+                        <div key={i} className="w-6 h-0.5 bg-secondary"></div>
                     </div>
                 )
             }
@@ -35,12 +35,12 @@ const RulerLines = ({
             lines.push(
                 <div className="w-full flex items-center justify-between gap-2">
                     <div>Footer</div>
-                    <div key={i} className="w-6 h-0.5 bg-white/50"></div>
+                    <div key={i} className="w-6 h-0.5 bg-secondary"></div>
                 </div>
             )
         }
-        else {
-            lines.push(<div key={i} className="w-2 h-0.5 bg-white/50"></div>)
+        else {  
+            lines.push(<div key={i} className="w-2 h-0.5 bg-secondary"></div>)
         }
     }
 

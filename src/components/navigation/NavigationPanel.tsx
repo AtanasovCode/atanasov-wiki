@@ -42,7 +42,7 @@ const NavigationPanel = ({
         >
             <RulerLines sections={sections} />
             <div
-                className="w-8 h-1 bg-white absolute right-0"
+                className="w-6 h-1 bg-text absolute right-0"
                 style={{ top: `${rulerScrollPosition}px` }}
             >
                 {/* Line that tracks current position of the page on the ruler  */}
