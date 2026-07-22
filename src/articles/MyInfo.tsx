@@ -2,8 +2,8 @@ import Paragraph from "../components/text-elements/Paragraph"
 
 const myInfo = [
     {
-        id: "education-history",
-        title: "Education History",
+        id: "about",
+        title: "About",
         content: (
             <>
                 <Paragraph>
@@ -27,6 +27,25 @@ const myInfo = [
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, velit voluptas, esse, explicabo fuga natus quos ipsam ipsa necessitatibus labore aperiam saepe officiis amet minus quae libero autem aliquam. Sapiente.
                     Dolores consequuntur illo possimus saepe beatae perferendis eius obcaecati nostrum recusandae deleniti nisi vero enim voluptatem, molestiae aspernatur perspiciatis harum eveniet, earum voluptates, qui esse quidem! Unde harum fugit laborum?
                     Nihil dolores non quis excepturi voluptatem dignissimos totam. Numquam consectetur, enim odio esse consequuntur necessitatibus velit deserunt beatae, maiores porro quibusdam voluptates, tempora blanditiis debitis nihil facilis quos quis officia.
+                </Paragraph>
+            </>
+        )
+    },
+    {
+        id: "projects",
+        title: "Projects",
+        content: (
+            <>
+                <Paragraph>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, velit voluptas, esse, explicabo fuga natus quos ipsam ipsa necessitatibus labore aperiam saepe officiis amet minus quae libero autem aliquam. Sapiente.
+                    Dolores consequuntur illo possimus saepe beatae perferendis eius obcaecati nostrum recusandae deleniti nisi vero enim voluptatem, molestiae aspernatur perspiciatis harum eveniet, earum voluptates, qui esse quidem! Unde harum fugit laborum?
+                    Nihil dolores non quis excepturi voluptatem dignissimos totam. Numquam consectetur, enim odio esse consequuntur necessitatibus velit deserunt beatae, maiores porro quibusdam voluptates, tempora blanditiis debitis nihil facilis quos quis officia.
+                </Paragraph>
+                <Paragraph>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus quibusdam veniam aperiam libero nesciunt, aspernatur quas sed, quam deleniti iure voluptatem itaque debitis consequatur odit. Aliquid adipisci quasi sint!
+                    Veniam deserunt dolores molestias eius earum doloremque! Vero nostrum aspernatur praesentium optio assumenda veniam facere libero quidem nobis error quaerat laborum consequatur perspiciatis ad voluptates, debitis autem cupiditate voluptas dolorum!
+                    Blanditiis magni omnis aliquam eius inventore doloremque maiores saepe enim, perspiciatis est illo repudiandae eligendi. Neque iusto nam iste veritatis minus commodi nihil, tempore necessitatibus reprehenderit sint minima officia sed.
+                    Sint amet autem illum, aspernatur voluptatibus delectus soluta vero quidem ipsum in? Facilis neque numquam nobis voluptas iure officiis accusantium assumenda maxime voluptates quo maiores porro cumque deserunt, voluptate cupiditate?
                 </Paragraph>
             </>
         )

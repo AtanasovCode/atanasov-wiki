@@ -11,6 +11,9 @@ interface WikiState {
 
   fontSize: string
   setFontSize: (size: string) => void
+
+  websiteHeight: number
+  setWebsiteHeight: (height: number) => void
 }
 
 
@@ -22,5 +25,7 @@ export const useWikiStore = create<WikiState>()((set) => ({
   font: "sans",
   setFont: (font) => set(() => ({ font })),
   fontSize: "normal",
-  setFontSize: (fontSize) => set(() => ({ fontSize }))
+  setFontSize: (fontSize) => set(() => ({ fontSize })),
+  websiteHeight: 0,
+  setWebsiteHeight: (websiteHeight) => set(() => ({ websiteHeight })),
 }))

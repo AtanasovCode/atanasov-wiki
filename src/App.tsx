@@ -14,8 +14,13 @@ import Home from "./pages/Home";
 
 const App = () => {
 
-  const { theme, font, fontSize } = useWikiStore()
+  const { theme, font, fontSize, setWebsiteHeight } = useWikiStore()
 
+
+  useEffect(() => {
+    const height = document.body.scrollHeight;
+    setWebsiteHeight(height)
+  }, [])
 
   useEffect(() => {
     document.documentElement.classList.remove("dark", "night");
@@ -32,6 +37,8 @@ const App = () => {
       document.documentElement.classList.add(fontSize);
     }
   }, [fontSize]);
+
+
 
   return (
     <div
