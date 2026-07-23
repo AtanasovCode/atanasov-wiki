@@ -26,7 +26,7 @@ const RulerLines = ({
                 lines.push(
                     <div
                         key={i}
-                        className="w-full h-0.5 flex items-center justify-between"
+                        className="w-full h-0.5 flex items-center justify-end gap-2"
                     >
                         <div className="whitespace-nowrap">
                             {sections[sectionIndex].title}

@@ -1,12 +1,12 @@
+import { useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useWikiStore } from "./useWikiStore";
 import clsx from "clsx";
-import { useEffect } from "react";
-
 
 // UI Elements
 import CustomizationPanel from "./components/customization/CustomizationPanel";
 import Header from "./components/header/Header";
+import SplashScreen from "./pages/SplashScreen";
 
 // Routes
 import Home from "./pages/Home";
@@ -56,7 +56,8 @@ const App = () => {
         <CustomizationPanel />
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<SplashScreen />} />
+            <Route path="/articles/1" element={<Home />} />
           </Routes>
         </BrowserRouter>
       </div>

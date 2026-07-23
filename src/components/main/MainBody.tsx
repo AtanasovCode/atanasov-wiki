@@ -12,12 +12,12 @@ const MainBody = () => {
             {
                 myInfo.map((data) => {
                     return (
-                        <>
+                        <div>
                             <Heading id={data.id}>
                                 {data.title}
                             </Heading>
                             {data.content}
-                        </>
+                        </div>
                     );
                 })
             }
