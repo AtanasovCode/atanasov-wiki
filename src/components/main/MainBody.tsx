@@ -1,22 +1,28 @@
 import Heading from "../text-elements/Heading";
+import type { ArticleContentTypes } from "../../types/articleTypes";
 
-import { myInfo } from "../../articles/articles";
+
+interface MainBodyProps {
+    currentArticle: ArticleContentTypes[]
+}
 
 
-const MainBody = () => {
+const MainBody = ({
+    currentArticle,
+}: MainBodyProps) => {
     return (
         <div
             className="
                 w-3xl py-6 text-body animate-slide-into-view"
         >
             {
-                myInfo.map((data) => {
+                currentArticle?.map((data) => {
                     return (
                         <div>
-                            <Heading id={data.id}>
-                                {data.title}
+                            <Heading id={data.sectionId}>
+                                {data.sectionTitle}
                             </Heading>
-                            {data.content}
+                            {data.paragraphs}
                         </div>
                     );
                 })

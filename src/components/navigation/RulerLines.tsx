@@ -1,35 +1,29 @@
-
-interface SectionProps {
-    id: string
-    title: string
-    content: React.ReactNode
-}
+import type { ArticleContentTypes } from "../../types/articleTypes"
 
 interface RulerLinesProps {
-    sections: SectionProps[]
+    article: ArticleContentTypes[]
 }
 
 
 
 
 const RulerLines = ({
-    sections,
+    article,
 }: RulerLinesProps) => {
-
     const lines = []
 
-    for (let i = 0; i < sections.length * 10; i++) {
+    for (let i = 0; i < article.length * 10; i++) {
         if (i % 10 === 0) {
             const sectionIndex = i / 10
 
-            if (sectionIndex < sections.length) {
+            if (sectionIndex < article.length) {
                 lines.push(
                     <div
                         key={i}
                         className="w-full h-0.5 flex items-center justify-end gap-2"
                     >
                         <div className="whitespace-nowrap">
-                            {sections[sectionIndex].title}
+                            {article[sectionIndex].sectionTitle}
                         </div>
                         <div className="w-6 h-0.5 bg-secondary"></div>
                     </div>

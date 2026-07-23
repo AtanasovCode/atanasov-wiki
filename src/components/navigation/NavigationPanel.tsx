@@ -1,23 +1,17 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { useWikiStore } from "../../useWikiStore"
+import type { ArticleContentTypes } from "../../types/articleTypes"
 
 import RulerLines from "./RulerLines"
 
-interface SectionProps {
-    id: string
-    title: string
-    content: React.ReactNode
-}
-
 interface NavigationPanelProps {
-    sections: SectionProps[]
+    article: ArticleContentTypes[]
 }
-
 
 const HEIGHT_RATIO: number = 4.5
 
 const NavigationPanel = ({
-    sections
+    article
 }: NavigationPanelProps) => {
 
     const { websiteHeight } = useWikiStore()
@@ -40,7 +34,7 @@ const NavigationPanel = ({
             className={`mr-8 mt-8 sticky top-8 transition-all duration-500`}
             style={{ height: `${panelHeight}px` }}
         >
-            <RulerLines sections={sections} />
+            <RulerLines article={article} />
             <div
                 className="w-6 h-0.5 bg-text absolute right-0"
                 style={{ top: `${rulerScrollPosition}px` }}
