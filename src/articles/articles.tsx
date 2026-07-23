@@ -5,6 +5,7 @@ const myArticle = {
     id: 1,
     content: [
         {
+            sectionId: 'about',
             sectionName: "about",
             sectionTitle: "About",
             paragraphs: (
@@ -23,6 +24,7 @@ const myArticle = {
             )
         },
         {
+            sectionId: "skills",
             sectionName: "skills",
             sectionTitle: "Skills",
             paragraphs: (
