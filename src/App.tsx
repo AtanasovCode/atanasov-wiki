@@ -9,7 +9,7 @@ import Header from "./components/header/Header";
 import SplashScreen from "./pages/SplashScreen";
 
 // Routes
-import Home from "./pages/Home";
+import ArticlePage from "./pages/ArticlePage";
 
 
 const App = () => {
@@ -57,7 +57,7 @@ const App = () => {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<SplashScreen />} />
-            <Route path="/articles/1" element={<Home />} />
+            <Route path="/articles/:id/:name" element={<ArticlePage />} />
           </Routes>
         </BrowserRouter>
       </div>
