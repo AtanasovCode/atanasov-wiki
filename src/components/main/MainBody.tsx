@@ -1,6 +1,6 @@
 import Heading from "../text-elements/Heading";
 
-import { myInfo } from "../../articles/MyInfo";
+import { myInfo } from "../../articles/articles";
 
 
 const MainBody = () => {

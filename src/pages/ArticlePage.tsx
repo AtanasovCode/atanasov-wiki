@@ -1,10 +1,10 @@
 import MainBody from "../components/main/MainBody";
 import NavigationPanel from "../components/navigation/NavigationPanel";
 
-import { myInfo } from "../articles/MyInfo";
+import { myInfo } from "../articles/articles";
 
 
-const Home = () => {
+const ArticlePage = () => {
     return (
         <div className="w-full flex items-start justify-between">
             <MainBody />
@@ -14,4 +14,4 @@ const Home = () => {
 }
 
 
-export default Home;
+export default ArticlePage;
