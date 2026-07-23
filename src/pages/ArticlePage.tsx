@@ -29,7 +29,7 @@ const ArticlePage = () => {
         <div className="w-full flex items-start justify-between">
             {/* <MainBody />
             <NavigationPanel sections={myInfo} /> */}
-            }{
+            {
                 currentArticle?.map((article: any) => {
                     return (
                         <div>

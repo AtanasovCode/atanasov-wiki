@@ -49,6 +49,7 @@ const reactArticle = {
     id: 2,
     content: [
         {
+            sectionId: "history",
             sectionName: "history",
             sectionTitle: "History",
             paragraphs: (
@@ -67,6 +68,7 @@ const reactArticle = {
             )
         },
         {
+            sectionId: "skills",
             sectionName: "skills",
             sectionTitle: "Skills",
             paragraphs: (
