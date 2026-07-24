@@ -8,7 +8,7 @@ interface HeadingProps {
 const Heading = ({ children, id }: HeadingProps) => {
     return (
         <div
-            className="font-bold text-3xl my-12 pb-4 border-b border-secondary/50"
+            className="font-bold text-3xl mb-12 pb-4 border-b border-secondary/50"
             id={id}
         >
             {children}

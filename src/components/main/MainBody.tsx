@@ -45,7 +45,7 @@ const MainBody = ({
     return (
         <div
             className="
-                w-3xl py-6 text-body animate-slide-into-view"
+                w-3xl text-body animate-slide-into-view"
         >
             {
                 currentArticle?.map((data) => {
@@ -53,6 +53,7 @@ const MainBody = ({
                         <div
                             key={data.sectionId}
                             id={data.sectionId}
+                            className="pb-24"
                             ref={(el) => {
                                 sectionRefs.current[data.sectionId] = el
                             }}

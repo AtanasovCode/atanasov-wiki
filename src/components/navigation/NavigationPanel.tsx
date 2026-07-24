@@ -37,7 +37,7 @@ const NavigationPanel = ({
 
     return (
         <div
-            className={`mr-8 mt-8 sticky top-8 flex items-end justify-start`}
+            className={`mr-8 sticky top-8 flex items-end justify-start`}
             style={{ height: `${panelHeight}px` }}
         >
             <RulerLines article={article} />
