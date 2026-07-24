@@ -7,5 +7,6 @@ export interface ArticleContentTypes {
  
 export interface ArticleTypes {
     id: number
+    articleName: string
     content: ArticleContentTypes[]
 }

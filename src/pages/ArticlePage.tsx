@@ -19,7 +19,7 @@ const ArticlePage = () => {
         const parsedID: number = parseInt(id ?? "")
 
         allArticles.map((a) => {
-            if (a.id === parsedID) {
+            if (a.id === parsedID && a.articleName === name) {
                 setCurrentArticle(a.content)
             }
         })

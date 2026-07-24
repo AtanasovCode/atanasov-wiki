@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import Heading from "../text-elements/Heading";
 import type { ArticleContentTypes } from "../../types/articleTypes";
 
@@ -10,6 +11,9 @@ interface MainBodyProps {
 const MainBody = ({
     currentArticle,
 }: MainBodyProps) => {
+
+    const sectionRefs = useRef<any>({})
+
     return (
         <div
             className="
@@ -18,7 +22,13 @@ const MainBody = ({
             {
                 currentArticle?.map((data) => {
                     return (
-                        <div>
+                        <div
+                            key={data.sectionId}
+                            id={data.sectionId}
+                            ref={(el) => {
+                                sectionRefs.current[data.sectionId] = el
+                            }}
+                        >
                             <Heading id={data.sectionId}>
                                 {data.sectionTitle}
                             </Heading>

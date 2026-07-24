@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { useWikiStore } from "../../useWikiStore"
 import type { ArticleContentTypes } from "../../types/articleTypes"
 
@@ -15,18 +15,22 @@ const NavigationPanel = ({
 }: NavigationPanelProps) => {
 
     const { websiteHeight } = useWikiStore()
-
     const [rulerScrollPosition, setRulerScrollPosition] = useState<number>(0)
-
     const panelHeight = websiteHeight / HEIGHT_RATIO
 
-    document.addEventListener("scroll", () => {
-        const scrollPercentage: number = window.scrollY
-            / (document.documentElement.scrollHeight - window.innerHeight);
+    useEffect(() => {
+        const handlePageScroll = () => {
+            const scrollPercentage: number = window.scrollY
+                / (document.documentElement.scrollHeight - window.innerHeight);
 
-        setRulerScrollPosition(scrollPercentage * panelHeight)
+            setRulerScrollPosition(scrollPercentage * panelHeight)
+        }
 
-    })
+        document.addEventListener("scroll", handlePageScroll)
+        handlePageScroll()
+
+        return () => window.removeEventListener("scroll", handlePageScroll)
+    }, [panelHeight, websiteHeight])
 
 
     return (

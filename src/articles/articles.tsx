@@ -3,6 +3,7 @@ import Paragraph from "../components/text-elements/Paragraph";
 
 const myArticle = {
     id: 1,
+    articleName: "my-info",
     content: [
         {
             sectionId: 'about',
@@ -47,6 +48,7 @@ const myArticle = {
 
 const reactArticle = {
     id: 2,
+    articleName: "react-wiki",
     content: [
         {
             sectionId: "history",
