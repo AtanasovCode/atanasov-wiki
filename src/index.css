@@ -57,6 +57,7 @@
     --accent: #75b3a6;
 
     --body-font-size: 1rem;
+    scroll-behavior: smooth;
 }
 
 /* ------------------------------------ Dark Theme */

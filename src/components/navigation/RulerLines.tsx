@@ -53,9 +53,9 @@ const RulerLines = ({
                                 className="flex items-center jusitfy-start gap-2 my-1.5"
                                 style={{ height: `${TICK_HEIGHT}px`, marginTop: `${idx === 0 && 0}px` }}
                             >
-                                <div className="whitespace-nowrap">
+                                <a href={`#${section.sectionId}`} className="whitespace-nowrap">
                                     {section.sectionTitle}
-                                </div>
+                                </a>
                                 <div
                                     className="w-6 bg-secondary"
                                     style={{ height: `${TICK_HEIGHT}px` }}
