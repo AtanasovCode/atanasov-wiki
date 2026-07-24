@@ -8,7 +8,7 @@ interface NavigationPanelProps {
     article: ArticleContentTypes[]
 }
 
-const HEIGHT_RATIO: number = 4.5
+export const HEIGHT_RATIO: number = 4 // Ratio between website height & naivation panel height
 
 const NavigationPanel = ({
     article
@@ -33,9 +33,11 @@ const NavigationPanel = ({
     }, [panelHeight, websiteHeight])
 
 
+
+
     return (
         <div
-            className={`mr-8 mt-8 sticky top-8 transition-all duration-500`}
+            className={`mr-8 mt-8 sticky top-8 flex items-end justify-start`}
             style={{ height: `${panelHeight}px` }}
         >
             <RulerLines article={article} />

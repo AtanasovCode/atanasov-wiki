@@ -13,7 +13,6 @@ const myArticle = {
                 <>
                     <Paragraph>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, dolorum mollitia. Nisi cum quas repellendus ducimus quasi labore alias ex dolorum explicabo cumque? In, officiis ut? Delectus eligendi unde et!
-                        Nulla possimus suscipit aspernatur error quibusdam non, adipisci, nam in quasi odio voluptatem explicabo porro reiciendis incidunt aliquam totam molestias saepe officia eos. Nihil consectetur dignissimos blanditiis ad ullam dolor?
                         Corporis placeat a sequi error et sint, tempore ab ad neque, fugit quam praesentium in, nesciunt suscipit iure repellendus ullam labore dolor fugiat repellat sit! Quas animi neque tenetur consequuntur.
                         Perferendis doloremque odio iusto tenetur sit necessitatibus est impedit quas nisi ducimus similique id, voluptas vero nesciunt reprehenderit in voluptatem. Laboriosam iste est repudiandae quae facilis praesentium et laborum maxime.
                     </Paragraph>
@@ -32,7 +31,6 @@ const myArticle = {
                 <>
                     <Paragraph>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, dolorum mollitia. Nisi cum quas repellendus ducimus quasi labore alias ex dolorum explicabo cumque? In, officiis ut? Delectus eligendi unde et!
-                        Nulla possimus suscipit aspernatur error quibusdam non, adipisci, nam in quasi odio voluptatem explicabo porro reiciendis incidunt aliquam totam molestias saepe officia eos. Nihil consectetur dignissimos blanditiis ad ullam dolor?
                     </Paragraph>
                     <Paragraph>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolore. Blanditiis commodi architecto recusandae explicabo quidem! Optio, quam qui recusandae, unde doloribus molestias quidem quibusdam tenetur fugit perferendis magni necessitatibus.
@@ -40,7 +38,28 @@ const myArticle = {
                     </Paragraph>
                 </>
             )
-        }
+        },
+        {
+            sectionId: "projects",
+            sectionName: "projects",
+            sectionTitle: "Projects",
+            paragraphs: (
+                <>
+                    <Paragraph>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, mollitia expedita excepturi ad, quis vero id inventore ut aliquam libero, laboriosam suscipit deserunt voluptatum officia veniam animi maiores nam neque!
+                        Quis ea libero quibusdam distinctio perspiciatis. Dolor nemo minima aliquam iste totam doloribus autem deleniti saepe illo incidunt maxime suscipit error vitae in modi placeat nam, tempora maiores sit. Exercitationem?
+                        Obcaecati, doloremque quasi? Dicta qui blanditiis ex voluptatibus aperiam enim. Voluptate consequuntur optio eveniet voluptatibus. Alias magnam dolor earum error, necessitatibus repudiandae iusto quam autem eligendi deleniti asperiores rerum quo?
+                        Error tempore incidunt minima autem praesentium impedit veniam totam dolorem aut sit obcaecati mollitia facere, repellat provident atque vel consequuntur officia neque iusto tenetur et. Recusandae maiores impedit et expedita.
+                        Nostrum, dicta voluptate optio omnis recusandae, aperiam quia asperiores similique repellendus natus quae sunt fugit excepturi eligendi! Adipisci ducimus recusandae in esse, deserunt ad voluptatem fugit vel itaque nemo nam?
+                    </Paragraph>
+                    <Paragraph>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, unde ipsam! Ipsa ipsum beatae repellat cupiditate, officiis qui molestias dolor tempore ullam expedita corporis sunt, voluptate, adipisci quia distinctio numquam.
+                        Sunt, eos autem sit sequi quos, culpa voluptate dignissimos quae quia, corrupti recusandae tempore? Iure eum odit illum porro quis veritatis quibusdam accusamus praesentium vero alias enim, ducimus, reprehenderit nostrum.
+                        Dicta quas tempora odio! Iusto velit, repellendus hic natus exercitationem, nam, eveniet aliquam consequatur laboriosam repudiandae nesciunt earum asperiores. Cupiditate temporibus itaque, aliquam fugiat beatae excepturi ea pariatur necessitatibus aut.
+                    </Paragraph>
+                </>
+            )
+        },
     ]
 }
 
