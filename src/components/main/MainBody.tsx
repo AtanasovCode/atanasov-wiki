@@ -48,7 +48,7 @@ const MainBody = ({
                 w-3xl text-body animate-slide-into-view"
         >
             {
-                currentArticle?.map((data) => {
+                currentArticle?.map((data, idx) => {
                     return (
                         <div
                             key={data.sectionId}
@@ -57,6 +57,7 @@ const MainBody = ({
                             ref={(el) => {
                                 sectionRefs.current[data.sectionId] = el
                             }}
+                            style={{ scrollMarginTop: idx === 0 ? "8.6rem" : "6.7rem" }}
                         >
                             <Heading id={data.sectionId}>
                                 {data.sectionTitle}
