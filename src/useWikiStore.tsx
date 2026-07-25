@@ -1,4 +1,5 @@
 import { create } from "zustand"
+import { persist } from "zustand/middleware"
 
 
 // Define types for state & actions
@@ -25,20 +26,24 @@ interface WikiState {
 
 
 // Create store using the curried form of `create`
-export const useWikiStore = create<WikiState>()((set) => ({
-  // ----------------------------------------------------- Website Customization
-  theme: "dark",
-  setTheme: (theme) => set(() => ({ theme })),
-  font: "sans",
-  setFont: (font) => set(() => ({ font })),
-  fontSize: "normal",
-  setFontSize: (fontSize) => set(() => ({ fontSize })),
+export const useWikiStore = create<WikiState>()(
+  persist(
+    (set) => ({
+      // ----------------------------------------------------- Website Customization
+      theme: "dark",
+      setTheme: (theme) => set(() => ({ theme })),
+      font: "sans",
+      setFont: (font) => set(() => ({ font })),
+      fontSize: "normal",
+      setFontSize: (fontSize) => set(() => ({ fontSize })),
 
-  // ----------------------------------------------------- Website Element Heights
-  websiteHeight: 0,
-  setWebsiteHeight: (websiteHeight) => set(() => ({ websiteHeight })),
-  sectionHeights: {},
-  setSectionHeights: (sectionHeights) => set(() => ({ sectionHeights })),
-  navigationPanelHeight: 0,
-  setNavigationPanelHeight: (navigationPanelHeight) => set(() => ({ navigationPanelHeight })),
-}))
+      // ----------------------------------------------------- Website Element Heights
+      websiteHeight: 0,
+      setWebsiteHeight: (websiteHeight) => set(() => ({ websiteHeight })),
+      sectionHeights: {},
+      setSectionHeights: (sectionHeights) => set(() => ({ sectionHeights })),
+      navigationPanelHeight: 0,
+      setNavigationPanelHeight: (navigationPanelHeight) => set(() => ({ navigationPanelHeight })),
+    }),
+    { name: 'wiki-store' }
+  ))
