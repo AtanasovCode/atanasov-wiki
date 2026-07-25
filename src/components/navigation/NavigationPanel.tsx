@@ -8,29 +8,40 @@ interface NavigationPanelProps {
     article: ArticleContentTypes[]
 }
 
-export const HEIGHT_RATIO: number = 4 // Ratio between website height & naivation panel height
+export const HEIGHT_RATIO: number = 4.5 // Ratio between website height & naivation panel height
 
 const NavigationPanel = ({
     article
 }: NavigationPanelProps) => {
 
-    const { websiteHeight } = useWikiStore()
+    const {
+        sectionHeights,
+        navigationPanelHeight,
+        setNavigationPanelHeight
+    } = useWikiStore()
     const [rulerScrollPosition, setRulerScrollPosition] = useState<number>(0)
-    const panelHeight = websiteHeight / HEIGHT_RATIO
 
     useEffect(() => {
         const handlePageScroll = () => {
-            const scrollPercentage: number = window.scrollY
-                / (document.documentElement.scrollHeight - window.innerHeight);
+            const currentY: number = window.scrollY
+            let totalSectionHeight = 0
 
-            setRulerScrollPosition(scrollPercentage * panelHeight)
+            for (let key in sectionHeights) {
+                const height: number = sectionHeights[key]
+                totalSectionHeight += height
+            }
+
+            const ratioTotalSectionHeight = totalSectionHeight / HEIGHT_RATIO
+            setNavigationPanelHeight(ratioTotalSectionHeight)
+
+            setRulerScrollPosition(currentY / HEIGHT_RATIO)
         }
 
         document.addEventListener("scroll", handlePageScroll)
         handlePageScroll()
 
         return () => window.removeEventListener("scroll", handlePageScroll)
-    }, [panelHeight, websiteHeight])
+    }, [sectionHeights, navigationPanelHeight])
 
 
 
@@ -38,7 +49,7 @@ const NavigationPanel = ({
     return (
         <div
             className={`mr-8 sticky top-8 flex items-end justify-start`}
-            style={{ height: `${panelHeight}px` }}
+            style={{ height: `${navigationPanelHeight}px` }}
         >
             <RulerLines article={article} />
             <div

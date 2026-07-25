@@ -17,6 +17,9 @@ interface WikiState {
 
   sectionHeights: Record<string, number>
   setSectionHeights: (height: Record<string, number>) => void
+
+  navigationPanelHeight: number
+  setNavigationPanelHeight: (navigationPanelHeight: number) => void
 }
 
 
@@ -36,4 +39,6 @@ export const useWikiStore = create<WikiState>()((set) => ({
   setWebsiteHeight: (websiteHeight) => set(() => ({ websiteHeight })),
   sectionHeights: {},
   setSectionHeights: (sectionHeights) => set(() => ({ sectionHeights })),
+  navigationPanelHeight: 0,
+  setNavigationPanelHeight: (navigationPanelHeight) => set(() => ({ navigationPanelHeight })),
 }))

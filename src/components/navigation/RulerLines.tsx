@@ -51,7 +51,7 @@ const RulerLines = ({
                             {/* Major Tick */}
                             <div
                                 className="flex items-center jusitfy-start gap-2 my-1.5"
-                                style={{ height: `${TICK_HEIGHT}px`, marginTop: `${idx === 0 && 0}px` }}
+                                style={{ height: `${TICK_HEIGHT}px`, marginTop: `${idx === 0 ? 0 : undefined}px` }}
                             >
                                 <a href={`#${section.sectionId}`} className="whitespace-nowrap">
                                     {section.sectionTitle}
