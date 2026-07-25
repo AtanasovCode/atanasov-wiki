@@ -22,29 +22,28 @@ const NavigationPanel = ({
     const [rulerScrollPosition, setRulerScrollPosition] = useState<number>(0)
 
     useEffect(() => {
+        let totalSectionHeight = 0
+
+        for (let key in sectionHeights) {
+            const height: number = sectionHeights[key]
+            totalSectionHeight += height
+        }
+
+        const ratioTotalSectionHeight = totalSectionHeight / HEIGHT_RATIO
+        setNavigationPanelHeight(ratioTotalSectionHeight)
+    }, [sectionHeights, setNavigationPanelHeight])
+
+    useEffect(() => {
         const handlePageScroll = () => {
             const currentY: number = window.scrollY
-            let totalSectionHeight = 0
-
-            for (let key in sectionHeights) {
-                const height: number = sectionHeights[key]
-                totalSectionHeight += height
-            }
-
-            const ratioTotalSectionHeight = totalSectionHeight / HEIGHT_RATIO
-            setNavigationPanelHeight(ratioTotalSectionHeight)
-
             setRulerScrollPosition(currentY / HEIGHT_RATIO)
         }
 
-        document.addEventListener("scroll", handlePageScroll)
+        window.addEventListener("scroll", handlePageScroll)
         handlePageScroll()
 
         return () => window.removeEventListener("scroll", handlePageScroll)
-    }, [sectionHeights, navigationPanelHeight])
-
-
-
+    }, [])
 
     return (
         <div

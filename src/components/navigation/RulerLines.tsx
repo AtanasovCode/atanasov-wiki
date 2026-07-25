@@ -9,7 +9,7 @@ interface RulerLinesProps {
 
 
 
-const TICK_SPACING: number = 12
+const TICK_SPACING: number = 10
 const TICK_HEIGHT: number = 2
 
 const RulerLines = ({
