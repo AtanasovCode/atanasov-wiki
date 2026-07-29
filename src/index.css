@@ -10,9 +10,6 @@
 
     --text-body: var(--body-font-size);
 
-    /* ------------------------------------ Shared */
-    --color-graphene: #2B2C28;
-
     --animate-slide-in: slide-in 0.2s ease-in-out;
     --animate-slide-into-view: slide-into-view .4s ease-in-out;
 
@@ -48,7 +45,7 @@
 }
 
 
-/* ------------------------------------ Light Theme */
+/* ------------------------------------ Root */
 :root {
     --color-bg: #F7F9FC;
     --text-color: #1E293B;
@@ -78,6 +75,8 @@
     --accent: #75b3a6;
 }
 
+
+/* ------------------------------------ Font Sizes */
 .small {
     --body-font-size: 0.85rem;
 }
