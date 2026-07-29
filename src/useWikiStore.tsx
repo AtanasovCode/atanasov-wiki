@@ -32,7 +32,7 @@ export const useWikiStore = create<WikiState>()(
       // ----------------------------------------------------- Website Customization
       theme: "dark",
       setTheme: (theme) => set(() => ({ theme })),
-      font: "sans",
+      font: "serif",
       setFont: (font) => set(() => ({ font })),
       fontSize: "normal",
       setFontSize: (fontSize) => set(() => ({ fontSize })),
