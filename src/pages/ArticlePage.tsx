@@ -26,7 +26,7 @@ const ArticlePage = () => {
     }, [id, name])
 
     return (
-        <div className="w-full flex items-start justify-between py-16">
+        <div className="w-full flex items-start justify-between py-10 md:py-16 md:gap-4">
             <MainBody currentArticle={currentArticle} />
             <NavigationPanel article={currentArticle} />
         </div>

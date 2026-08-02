@@ -47,7 +47,7 @@ const NavigationPanel = ({
 
     return (
         <div
-            className={`mr-8 sticky top-8 flex items-end justify-start`}
+            className={`lg:mr-8 flex items-end justify-start absolute right-[200%] top-0 md:sticky md:top-8 md:right-0`}
             style={{ height: `${navigationPanelHeight}px` }}
         >
             <RulerLines article={article} />

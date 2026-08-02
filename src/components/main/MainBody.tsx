@@ -45,7 +45,7 @@ const MainBody = ({
     return (
         <div
             className="
-                w-3xl text-body animate-slide-into-view"
+                max-w-3xl text-body animate-slide-into-view px-6 md:px-0"
         >
             {
                 currentArticle?.map((data, idx) => {

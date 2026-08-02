@@ -39,7 +39,7 @@ const CustomizationPanel = () => {
             className="
                 flex flex-col items-start justify-start gap-3 min-w-48 h-screen
                 p-6 pr-0 border-r border-secondary/50 bg-background z-1 overflow-y-auto
-                sticky top-0 left-0
+                absolute -left-full top-0 md:sticky md:top-0 md:left-0
             "
         >
             <div className="font-bold text-lg">
